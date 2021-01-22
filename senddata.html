@@ -27,8 +27,8 @@
         <li><i class="far fa-home-lg-alt icons"></i><a href="./index.html">Dashboard</a></li>
         <li><i class="fal fa-wallet icons"></i><a href="./addfunds.html">Add funds</a></li>
         <li><i class="fal fa-user icons"></i><a href="#">Contacts</a></li>
-        <li class="active-nav"><i class="fal fa-phone-alt icons"></i><a href="./airtime.html">Airtime</a></li>
-        <li><i class="fal fa-database icons"></i><a href="./senddata.html">Data</a></li>
+        <li><i class="fal fa-phone-alt icons"></i><a href="./airtime.html">Airtime</a></li>
+        <li class="active-nav"><i class="fal fa-database icons"></i><a href="./senddata.html">Data</a></li>
         <li><i class="fas fa-history icons"></i><a href="#">History</a></li>
         <li><i class="far fa-bell icons"></i><a href="#">Notification</a></li>
         <li><i class="fal fa-cog icons"></i><a href="#">Settings</a></li>
@@ -38,16 +38,30 @@
     <!--end of sidebar-->
 
     <!--second slide of the page-->
-    <section class="main-container " id="airtime">
-      <h1 class="main-header">Airtime</h1>
-      <button>Quick Airtime Purchase</button>
+    <section class="main-container" id="airtime">
+      <h1 class="main-header">Data</h1>
+      <button>Quick Data Purchase</button>
       <section class="main-div">
         <form>
-          <h1 class="main-header">Send Airtime to Contacts</h1>
-          <div>
-            <label for="amount">Enter Amount</label>
-            <input type="text" name="amount" >
-          </div>
+          <h1 class="main-header">Send Data to Contact</h1>
+          <section class="data-plan-div">
+            <div>
+              <label for="amount">Enter Amount</label>
+              <input type="text" name="amount">
+            </div>
+
+            <div>
+              <label for="amount">Select DataPlan</label>
+              <select>
+                <option selected>Select DataPlan</option>
+                <option>Morayo</option>
+                <option>Abidemi</option>
+                <option>Funke</option>
+                <option>Bolu</option>
+                <option>Elizabeth</option>
+              </select>
+            </div>
+          </section>
           <div>
             <label for="amount">Enter Amount</label>
             <select>
@@ -62,11 +76,25 @@
           <button>Send</button>
         </form>
         <form>
-          <h1 class="main-header">Send Airtime to Group</h1>
-          <div>
-            <label for="amount">Enter Amount</label>
-            <input type="text" name="amount" >
-          </div>
+          <h1 class="main-header">Send Data to Group</h1>
+          <section class="data-plan-div">
+            <div>
+              <label for="amount">Enter Amount</label>
+              <input type="text" name="amount">
+            </div>
+
+            <div>
+              <label for="amount">Select DataPlan</label>
+              <select>
+                <option selected>Select DataPlan</option>
+                <option>Morayo</option>
+                <option>Abidemi</option>
+                <option>Funke</option>
+                <option>Bolu</option>
+                <option>Elizabeth</option>
+              </select>
+            </div>
+          </section>
           <div>
             <label for="amount">Enter Amount</label>
             <select>
@@ -80,7 +108,7 @@
           </div>
           <button>Send</button>
         </form>
- 
+
       </section>
 
     </section>

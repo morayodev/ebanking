@@ -25,43 +25,58 @@
       </div>
       <ul>
         <li><i class="far fa-home-lg-alt icons"></i><a href="./index.html">Dashboard</a></li>
-        <li class="active-nav"><i class="fal fa-wallet icons"></i><a href="./addfunds.html">Add funds</a></li>
+        <li><i class="fal fa-wallet icons"></i><a href="./addfunds.html">Add funds</a></li>
         <li><i class="fal fa-user icons"></i><a href="#">Contacts</a></li>
         <li><i class="fal fa-phone-alt icons"></i><a href="./airtime.html">Airtime</a></li>
         <li><i class="fal fa-database icons"></i><a href="./senddata.html">Data</a></li>
         <li><i class="fas fa-history icons"></i><a href="#">History</a></li>
         <li><i class="far fa-bell icons"></i><a href="#">Notification</a></li>
-        <li><i class="fal fa-cog icons"></i><a href="#">Settings</a></li>
+        <li class="active-nav"><i class="fal fa-cog icons"></i><a href="./settings.html">Settings</a></li>
         <li class="line"><i class="fal fa-sign-out"></i><a href="#">Logout</a></li>
       </ul>
     </div>
     <!--end of sidebar-->
 
     <!--second slide of the page-->
-    <section class="main-container" id="add-funds">
-      <h1 class="main-header">Add Funds</h1>
-      <p class="payment-method">Choose your payment Method</p>
-      <div class="payment-div">
-        <button class="bank"><i class="far fa-home-lg-alt"></i>Bank Transfer</button>
-        <button class="paystack"><i class="far fa-home-lg-alt"></i>Pay Stack</button>
+    <section class="main-container" id="settings">
+      <div class="header-div">
+        <h1 class="main-header">Account Settings</h1>
+        <button>Set API Password</button>
       </div>
-      <div class="transfer-details">
-        <p>Transfer your funds to</p>
-        <div class="transfer-name">
-          <input type="checkbox" name="gender" />
-          <!-- <input type="radio" name="gender"/> -->
+      <div class="upload-div">
+        <div>
+          <img src="./images/hero6.jpg" alt="User" />
           <div>
-            <h2>Sudha Telecoms</h2>
-            <h3>0246757988</h3>
-            <h4>Access bank</h4>
+            <h2>Upload a New Photo</h2>
+            <p>Profile pic.jpg</p>
           </div>
         </div>
-        <div class="upload">
-          <p>Upload evidence of payment here</p>
-          <button>Choose</button>
-        </div>
-        <button class="notify-btn">Notify Admin</button>
+        <button>Upload image</button>
       </div>
+      <section>
+
+        <div class="form-holder">
+          <form>
+            <h1 class="main-header">Update Account info</h1>
+            <section class="flex">
+              <div>
+                <label>Name</label>
+                <input type="text">
+              </div>
+
+              <div>
+                <label>Email Address</label>
+                <input type="email" />
+              </div>
+            </section>
+            <div>
+              <label>API Key</label>
+              <input type="text" />
+            </div>
+            <button>Update Info</button>
+          </form>
+        </div>
+      </section>
     </section>
     <!--end second slide of the page-->
   </section>

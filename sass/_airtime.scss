@@ -1,10 +1,16 @@
 #airtime {
   color: #404040;
-  section {
+  section.main-div {
     background-color: white;
     padding: 2.5rem;
     border-radius: 10px;
     margin: 1.5rem 0;
+    .data-plan-div{
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: 2.5rem;
+      align-items: center;
+    }
     form {
       width: 80%;
       margin-bottom: 2rem;
