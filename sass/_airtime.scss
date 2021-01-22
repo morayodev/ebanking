@@ -1,0 +1,38 @@
+#airtime {
+  color: #404040;
+  section {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    form {
+      width: 80%;
+      margin-bottom: 2rem;
+      div {
+        margin-bottom: .75rem;
+      }
+      label {
+        display: block;
+        margin-bottom: .75rem;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: .75rem;
+        outline: none;
+        border: 1px solid #4040402b;
+        border-radius: 5px;
+        color: #404040;
+        &:focus {
+          border-color: white;
+          box-shadow: 0 0 8px 0px #4040406e;
+        }
+      }
+      button {
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+      }
+    }
+  }
+}

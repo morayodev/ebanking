@@ -9,6 +9,9 @@ body {
   font-family: 'Jost', sans-serif;
   font-weight: normal;
 }
+button,input,select{
+  font-family: 'Jost', sans-serif !important;
+}
 
 .container {
   display: flex;
@@ -24,7 +27,7 @@ body {
 }
 
 .sidebar {
-  width: 292px;
+  width: 20%;
   /* height: 1067px; */
 }
 
@@ -52,7 +55,7 @@ body {
   border-left: 5px solid white;
 }
 
-.sidebar li:hover {
+.sidebar li:hover,.sidebar li.active-nav {
   background: rgba(169, 82, 242, 0.1);
   border-left-color: #A952F2;
   cursor: pointer;
@@ -89,11 +92,11 @@ body {
   color: rgba(255, 21, 21, 0.68);
 }
 
-.sidebarsec {
+.main-container {
   background-color: rgba(246, 243, 248, 1);
-  width: 1440px;
-  /* height: 1155px; */
-  padding: 50px;
+  width: 80%;
+  /* margin: auto; */
+  padding: 5rem 3rem;
 }
 
 
@@ -102,12 +105,13 @@ body {
   justify-content: space-between;
 }
 
-.slide p {
+.main-header {
   font-Weight: 600;
   color: rgba(31, 31, 32, 1);
   font-size: 32px;
   line-height: 46px;
   color: #1F1F20;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
