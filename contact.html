@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <!--this what is holding the whole page-->
+<div class="container">
+        <!--begining of sidebar-->
+    <div class="sidebar">
+    <div class="bar">
+    <img src="images/hero6.jpg" alt="my hero">
+    <h3>Hello, Alsaheem</h3>
+    <p>adehaalewa64@gmail.com</p>
+    </div>
+    <ul>
+            <li><i class="far fa-home-lg-alt icons"></i><a href="Dashboard.html">Dashboard</a></li>
+            <li><i class="fal fa-wallet icons"></i><a href="#">Add funds</a></li>
+            <li><i class="fal fa-user icons"></i><a href="contact.html">Contacts</a></li>
+            <li><i class="fal fa-phone-alt icons"></i><a href="#">Airtime</a></li>
+            <li><i class="fal fa-database icons"></i><a href="#">Data</a></li>
+            <li><i class="fas fa-history icons"></i><a href="History.html">History</a></li>
+            <li><i class="far fa-bell icons"></i><a href="#">Notification</a></li>
+            <li><i class="fal fa-cog icons"></i><a href="#">Settings</a></li>
+            <li class="line"><i class="fal fa-sign-out"></i><a href="#">Logout</a></li>
+    </ul>
+    </div>
+    <!--a div is holdind manage the eam,add contact and co,in other to be able to switch from contacts and group-->
+    <div  class="sidebarsec">
+    <div class="sidesec">
+        <div class="contactbox">
+        <h3>Manage your Team</h3>
+        <button id="addbtn">Add Contact<i class="fal fa-plus-circle" style="padding:5px;"></i></button>
+        </div>
+     <div class="contactbox1">
+         <div>
+         <h2 id="contact2">Contacts</h2>
+         </div>
+         <div>
+         <h2 id="group2">Groups</h2>
+         </div>
+     </div>
+     <!--the end of the div-->
+      <!--recharge selected and others including the table is in a div in order to switch fom contact to groups coz th
+    values changes-->
+     <div id="contact">
+         <div  class="contactbox2">
+         <div>
+         <button class="btn1">Recharge selected</button>
+        <button class="btn2">Upload Spreadsheet <i class="far fa-arrow-from-bottom"></i></button>
+        </div>
+        <div>
+            <button class="btn3">Download sample spreadsheet <i class="fal fa-download"></i></button>
+        </div>
+     </div>
+     <!-- </div> -->
+     <h1>
+         All Contact
+     </h1>
+    <div>
+        <!-- </div> -->
+       <table>
+        <thead>
+                <tr> 
+                   <th></th>
+                   <th>NAME</th>
+                   <th>HOME NUMBER</th>
+                    <th>NETWORK</th>
+                   <th>DATE CREATED</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td ><input type="checkbox" class="int"/></td>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+            <td ><input type="checkbox" class="int"/></td>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+             <tbody>
+            <tr>
+            <td ><input type="checkbox" class="int"/></td>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+             <tbody>
+            <tr>
+            <td ><input type="checkbox" class="int"/></td>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+             <tbody>
+            <tr>
+            <td ><input type="checkbox" class="int"/></td>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td style="color:rgba(17, 138, 178, 1);"><i class="far fa-pencil"></i></td>
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+            </div>
+            <!-- </div> -->
+            <!--end of the div-->
+         
+        <!--begining ofgroup-->   
+        
+      <div>
+     <div id="group" >
+         <div class="contactbox2">
+         <div>
+         <button class="btn1">Create Group <i class="far fa-users"></i></button>
+        <button class="btn2">Recharge selected contacts <i class="far fa-arrow-from-bottom"></i></button>
+        </div>
+     </div>
+     <div class="bar2 names">
+         <div>
+         <img src="images/hero6.jpg" alt="Add">
+         <h2>Almas</h2>
+         <div style="display: flex;justify-content: center;align-items: center;">
+         <input type="checkbox">
+         <p>Select</p>
+         </div>
+     </div>
+      <div >
+         <img src="images/hero6.jpg" alt="Add">
+         <h2>Almas</h2>
+          <div style="display: flex;justify-content: center;align-items: center;">
+         <input type="checkbox">
+         <p>Select</p>
+         </div>
+     </div>
+      <div>
+         <img src="images/hero6.jpg" alt="Add">
+         <h2>Almas</h2>
+        <div style="display: flex;justify-content: center;align-items: center;">
+         <input type="checkbox">
+         <p>Select</p>
+         </div>     </div>
+     </div>
+     <h1 class="bar2">
+         My Groups
+     </h1>
+  
+       <table>
+        <thead>
+                <tr> 
+                   <th>NAME</th>
+                   <th>HOME NUMBER</th>
+                    <th>NETWORK</th>
+                   <th>DATE CREATED</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+             <td><button class="detail"><a href="#">View Details</a></button> </td>      
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+            <tbody>
+            <tr>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+             <td><button class="detail"><a href="#">View Details</a></button> </td>     
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+             <tbody>
+            <tr>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td><button class="detail"><a href="#">View Details</a></button> </td>      
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+             <tbody>
+            <tr>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td><button class="detail"><a href="#">View Details</a></button> </td>  
+            <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+             <tbody>
+            <tr>
+            <td>Guy Hawkins</td>
+            <td>08032456788</td>
+            <td>Airtel</th>
+             <td>18-08-2020</td>
+            <td><button class="detail"><a href="#">View Details</a></button> </td>      
+           <td style="color:rgba(255, 0, 0, 1);"><i class="far fa-trash-alt"></i></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+          </div>
+          </div>
+            <!--end of group-->
+            <!--end of the page-->
+   
+   <script src="app.js"/></script>
+</body>
+</html>
