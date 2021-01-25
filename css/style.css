@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
 button {
   background: #A952F2;
   text-align: center;
@@ -13,6 +24,252 @@ button {
 
 button:hover {
   box-shadow: 0px 0px 7px 0px #00000075;
+}
+
+input,
+select,
+button {
+  font-family: 'Jost', sans-serif !important;
+}
+
+nav {
+  background-color: white;
+  padding: .5rem 3rem;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .mobile__hamburger {
+  margin: 1rem 0;
+  width: 35px;
+  cursor: pointer;
+  display: none;
+  overflow: hidden;
+}
+
+nav .mobile__hamburger div, nav .mobile__hamburger::before, nav .mobile__hamburger:after {
+  background-color: #000;
+  content: '';
+  display: block !important;
+  height: 3px;
+  margin: 7px 0;
+  transition: all .2s ease-in-out;
+  z-index: 30;
+}
+
+nav .mobile__hamburger::before {
+  width: 20px;
+}
+
+nav .mobile__hamburger::after {
+  width: 20px;
+  transform: translateX(15px);
+}
+
+nav .mobile__hamburger:hover div {
+  width: 25px;
+  transform: translateX(10px);
+}
+
+nav .mobile__hamburger:hover:after {
+  width: 30px;
+  transform: translateX(5px);
+}
+
+nav .mobile__hamburger:hover::before {
+  width: 35px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.user-img {
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  align-items: end;
+  position: relative;
+}
+
+main aside#side-nav {
+  display: block;
+  width: 22%;
+  min-width: 270px;
+  background-color: white;
+}
+
+main aside#side-nav div.user-details {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+main aside#side-nav div.user-details p {
+  font-weight: 300;
+}
+
+main aside#side-nav .list-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+}
+
+main aside#side-nav .list-items a {
+  color: rgba(31, 31, 32, 0.6);
+  text-decoration: none;
+  padding: 1.25rem 4rem;
+  margin: .25rem 0;
+  border-left: 4px solid transparent;
+  width: 100%;
+}
+
+main aside#side-nav .list-items a:hover, main aside#side-nav .list-items a.active-nav {
+  background: rgba(169, 82, 242, 0.1);
+  border-left-color: #A952F2;
+}
+
+main aside#side-nav .list-items a:last-of-type {
+  color: red;
+}
+
+main aside#side-nav .list-items hr {
+  width: 100%;
+  margin: 1rem 0;
+  background: #EEF1F8;
+  opacity: 0.5;
+}
+
+main aside#side-nav .list-items i {
+  margin-right: 2rem;
+}
+
+main .main-container {
+  background-color: #f6f3f8;
+  width: 80%;
+  /* margin: auto; */
+  padding: 5rem 3rem;
+}
+
+main .main-container .header-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .main-container .header-h1 {
+  font-Weight: 600;
+  color: #1f1f20;
+  font-size: 32px;
+  line-height: 46px;
+  color: #1F1F20;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  nav .mobile__hamburger {
+    display: block;
+  }
+  main aside#side-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  main .main-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: .5rem 1rem;
+  }
+  main .main-container {
+    padding: 4rem 2rem;
+  }
+  main .main-container .header-div {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 640px) {
+  main .main-container {
+    padding: 3rem 1rem;
+  }
+}
+
+#overview .cards-div {
+  display: flex;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+#overview .item-card {
+  display: flex;
+  align-items: start;
+  background-color: white;
+  padding: 2rem 1.25rem;
+  border-radius: 8px;
+  width: 350px;
+  color: rgba(64, 64, 64, 0.7);
+  margin: .5rem 1.5rem;
+}
+
+#overview .item-card p {
+  font-size: 23px;
+  margin-bottom: 1rem;
+}
+
+#overview .item-card i {
+  background-color: yellow;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 0.9rem;
+  margin-right: 1rem;
+}
+
+#overview .item-card h2 {
+  font-weight: 400;
+  color: #166CDD;
+}
+
+@media (max-width: 768px) {
+  #overview .cards-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #overview .item-card {
+    margin: .5rem;
+    padding: 1rem 1.25rem;
+    width: 358px;
+  }
+}
+
+@media (max-width: 640px) {
+  #overview .item-card {
+    margin: .5rem auto;
+    padding: 1rem 1.25rem;
+    width: 100%;
+  }
 }
 
 #add-funds p {
@@ -75,6 +332,16 @@ button:hover {
   margin: 12rem 0 0 auto;
 }
 
+@media (max-width: 640px) {
+  #add-funds .payment-div {
+    flex-direction: column;
+    align-items: unset;
+  }
+  #add-funds .payment-div button {
+    margin-bottom: .5rem;
+  }
+}
+
 #airtime {
   color: #404040;
 }
@@ -99,7 +366,7 @@ button:hover {
 }
 
 #airtime section.main-div form div {
-  margin-bottom: .75rem;
+  margin-bottom: 1.25rem;
 }
 
 #airtime section.main-div form label {
@@ -127,6 +394,171 @@ button:hover {
   margin-left: auto;
   margin-right: 0;
   display: block;
+}
+
+@media (max-width: 768px) {
+  #airtime section.main-div {
+    padding: 1.5rem;
+  }
+  #airtime section.main-div .data-plan-div {
+    grid-auto-flow: row;
+    grid-gap: 0;
+  }
+  #airtime section.main-div form {
+    width: 100%;
+  }
+}
+
+#contact .recharge-btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .recharge-btn-div div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .recharge-btn-div div + button {
+  background-color: initial;
+  color: #A952F2;
+  border: 2px solid #A952F2;
+}
+
+#contact .header-text {
+  margin: 1.5rem 0;
+}
+
+#contact #group {
+  display: none;
+}
+
+#contact .table-res {
+  overflow-x: auto;
+}
+
+#contact table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#contact table th {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #404040;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+#contact table tr {
+  background-color: white;
+}
+
+#contact table tr:first-of-type {
+  background-color: initial;
+}
+
+#contact table tr:nth-child(even) {
+  background-color: #a952f226;
+}
+
+#contact table td {
+  border-bottom: 20px solid #f6f3f8;
+  padding: 1.25rem 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(31, 31, 32, 0.6);
+  white-space: nowrap;
+}
+
+#contact table td:first-of-type {
+  padding: 1rem 2rem;
+}
+
+#contact table td:first-of-type input {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
+
+#contact table i {
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  #contact table th {
+    padding: 1rem;
+  }
+  #contact table td {
+    padding: 1.25rem 1rem;
+  }
+  #contact .recharge-btn-div {
+    flex-direction: column;
+  }
+  #contact .recharge-btn-div div {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact .recharge-btn-div {
+    align-items: unset;
+  }
+  #contact .recharge-btn-div div {
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    justify-content: unset;
+    align-items: unset;
+  }
+}
+
+.tab-btn {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2.5rem 0;
+  border-bottom: 5px solid rgba(196, 196, 196, 0.15);
+}
+
+.tab-btn li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(64, 64, 64, 0.68);
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  line-height: 2.5;
+  padding: 0 1.5rem;
+  margin: 0 .5rem;
+}
+
+.tab-btn li:hover, .tab-btn li.active-contact {
+  color: #A952F2;
+}
+
+.tab-btn li:hover::after, .tab-btn li.active-contact::after {
+  width: 100%;
+}
+
+.tab-btn li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background: #A952F2;
+  transition: width .3s;
+  position: absolute;
+  left: 0;
 }
 
 #settings .header-div {
@@ -172,9 +604,8 @@ button:hover {
 }
 
 #settings form {
-  padding: 3rem 2rem 6rem;
+  padding: 3rem 3rem 6rem;
   margin-bottom: 2rem;
-  width: 80%;
 }
 
 #settings form .flex {
@@ -185,7 +616,7 @@ button:hover {
 }
 
 #settings form div {
-  margin-bottom: .75rem;
+  margin-bottom: 1.25rem;
 }
 
 #settings form label {
@@ -213,4 +644,98 @@ button:hover {
   margin-left: auto;
   margin-right: 0;
   display: block;
+}
+
+@media (max-width: 768px) {
+  #settings .upload-div {
+    flex-direction: column;
+    align-items: unset;
+    padding: 1rem;
+  }
+  #settings .upload-div .user-img {
+    width: 70px;
+    height: 70px;
+  }
+  #settings .upload-div h2 {
+    font-size: 1.35rem;
+    margin-bottom: .5rem;
+  }
+  #settings .upload-div > div {
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+  }
+  #settings form {
+    padding: 2rem 1rem;
+  }
+  #settings form .flex {
+    grid-auto-flow: row;
+    grid-gap: 0;
+  }
+}
+
+#history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#history table th {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #404040;
+  text-align: left;
+  padding: 1rem;
+}
+
+#history table tr {
+  background-color: white;
+}
+
+#history table tr:first-of-type {
+  background-color: initial;
+}
+
+#history table tr:nth-child(even) {
+  background-color: #a952f226;
+}
+
+#history table td {
+  border-bottom: 20px solid #f6f3f8;
+  padding: 1rem 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(31, 31, 32, 0.6);
+}
+
+#history table i {
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+#history #airtime td {
+  padding: 1rem .5rem;
+}
+
+#history #airtime td:nth-of-type(2) {
+  padding: 1rem 2.5rem;
+  margin: 0 .5rem;
+  background: rgba(58, 183, 96, 0.1);
+  color: #3AB760;
+  border-left: 5px solid #3AB760;
+  text-align: center;
+}
+
+#history #airtime td:nth-of-type(2).fail {
+  background: rgba(255, 0, 0, 0.1);
+  color: #FF0000;
+  border-left: 5px solid #FF0000;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  #history #airtime, #history #topup {
+    overflow-x: auto;
+  }
 }
