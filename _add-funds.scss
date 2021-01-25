@@ -1,0 +1,63 @@
+// Add Funds Page
+#add-funds {
+  p {
+    color: rgba(64, 64, 64, 0.68);
+  }
+  .payment-method {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    width: 100%;
+  }
+  .payment-div {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    i {
+      margin-right: 1rem;
+    }
+    .bank {
+      background-color: #404040;
+    }
+    .paystack {
+      background-color: transparent;
+      color: rgba(64, 64, 64, 0.68);
+      border: 1px solid rgba(64, 64, 64, 0.68);
+    }
+  }
+  .transfer-details {
+    background-color: white;
+    padding: 1.5rem;
+    .transfer-name {
+      display: flex;
+      // align-items: center;
+      padding: 1.5rem 0;
+      input {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: .5rem 1rem;
+      }
+    }
+    .upload {
+      >p {
+        margin-bottom: .75rem;
+      }
+      button {
+        background: rgba(31, 31, 32, 0.4);
+      }
+    }
+  }
+  .notify-btn {
+    display: block;
+    margin: 12rem 0 0 auto;
+  }
+  @media (max-width: 640px) {
+    .payment-div{
+      flex-direction: column;
+      align-items: unset;
+      button{
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}

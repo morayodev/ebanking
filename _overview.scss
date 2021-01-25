@@ -1,0 +1,55 @@
+#overview {
+  .cards-div {
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  .item-card {
+    display: flex;
+    align-items: start;
+    background-color: white;
+    padding: 2rem 1.25rem;
+    border-radius: 8px;
+    width: 350px;
+    color: rgba(64, 64, 64, 0.7);
+    margin: .5rem 1.5rem;
+    p {
+      font-size: 23px;
+      margin-bottom: 1rem;
+    }
+    i {
+      background-color: yellow;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: white;
+      border-radius: 0.9rem;
+      margin-right: 1rem;
+    }
+    h2 {
+      font-weight: 400;
+      color: #166CDD;
+    }
+  }
+  @media (max-width: 768px) {
+    .cards-div {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .item-card {
+      margin: .5rem;
+      padding: 1rem 1.25rem;
+      width: 358px;
+    }
+  }
+  @media (max-width: 640px) {
+    .item-card {
+      margin: .5rem auto;
+      padding: 1rem 1.25rem;
+      width: 100%;
+    }
+  }
+}

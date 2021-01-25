@@ -1,0 +1,217 @@
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+  // Mixin 
+  @mixin flex-mixin($justify,
+  $direction) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    flex-direction: $direction;
+  }
+  
+  $primaryColor: #A952F2;
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Jost', sans-serif;
+  }
+  
+  button {
+    // height: 67px;
+    background: #A952F2;
+    text-align: center;
+    padding: .75rem 1.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    &:hover {
+      box-shadow: 0px 0px 7px 0px #00000075;
+    }
+  }
+  
+  input,
+  select,
+  button {
+    font-family: 'Jost', sans-serif !important;
+  }
+  
+  nav {
+    background-color: white;
+    padding: .5rem 3rem;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobile__hamburger {
+      margin: 1rem 0;
+      width: 35px;
+      cursor: pointer;
+      display: none;
+      overflow: hidden;
+      div,
+      &::before,
+      &:after {
+        background-color: #000;
+        // background-color: #fff;
+        content: '';
+        display: block !important;
+        height: 3px;
+        margin: 7px 0;
+        transition: all .2s ease-in-out;
+        z-index: 30;
+      }
+      &::before {
+        width: 20px;
+      }
+      &::after {
+        width: 20px;
+        transform: translateX(15px);
+      }
+      &:hover {
+        div {
+          width: 25px;
+          transform: translateX(10px);
+        }
+        &:after {
+          width: 30px;
+          transform: translateX(5px);
+        }
+        &::before {
+          width: 35px;
+        }
+      }
+    }
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .user-img {
+    width: 146px;
+    height: 146px;
+    border-radius: 50%;
+  }
+  
+  main {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    align-items: end;
+    position: relative;
+    aside#side-nav {
+      display: block;
+      width: 22%;
+      min-width: 270px;
+      background-color: white;
+      div.user-details {
+        text-align: center;
+        padding: 1.5rem 0;
+        p {
+          font-weight: 300;
+        }
+      }
+      .list-items {
+        @include flex-mixin(center,
+        column);
+        width: 100%;
+        align-items: start;
+        a {
+          color: rgba(31, 31, 32, 0.6);
+          text-decoration: none;
+          padding: 1.25rem 4rem;
+          margin: .25rem 0;
+          border-left: 4px solid transparent;
+          width: 100%;
+          &:hover,
+          &.active-nav {
+            background: rgba(169, 82, 242, 0.1);
+            border-left-color: $primaryColor;
+          }
+          &:last-of-type {
+            color: red;
+          }
+        }
+        hr {
+          width: 100%;
+          margin: 1rem 0;
+          background: #EEF1F8;
+          opacity: 0.5;
+        }
+        i {
+          margin-right: 2rem;
+        }
+      }
+    }
+    .main-container {
+      background-color: rgba(246, 243, 248, 1);
+      width: 80%;
+      /* margin: auto; */
+      padding: 5rem 3rem;
+      .header-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header-h1 {
+        font-Weight: 600;
+        color: rgba(31, 31, 32, 1);
+        font-size: 32px;
+        line-height: 46px;
+        color: #1F1F20;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  
+  // Media Queries
+  @media (max-width: 1024px) {
+    nav {
+      .mobile__hamburger {
+        display: block;
+      }
+    }
+    main {
+      aside#side-nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+      .main-container {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      padding: .5rem 1rem;
+    }
+    main {
+      .main-container {
+        padding: 4rem 2rem;
+        .header-div {
+          flex-direction: column;
+          align-items: flex-start !important;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    main {
+      .main-container {
+        padding: 3rem 1rem;
+      }
+    }
+  }

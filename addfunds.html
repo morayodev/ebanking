@@ -4,42 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="icon" href="./images/logo.png" />
   <title>Sudha</title>
 </head>
 
 <body>
+  <!-- Logo Nav -->
   <nav>
-    <img src="./images/logo.svg " />
-  </nav>
-  <section class="container">
-    <!--begining of sidebar-->
-    <div class="sidebar">
-      <div class="bar">
-        <img src="images/hero6.jpg" alt="my hero">
-        <h3>Hello, Alsaheem</h3>
-        <p>adehaalewa64@gmail.com</p>
-      </div>
-      <ul>
-        <li><i class="far fa-home-lg-alt icons"></i><a href="./index.html">Dashboard</a></li>
-        <li class="active-nav"><i class="fal fa-wallet icons"></i><a href="./addfunds.html">Add funds</a></li>
-        <li><i class="fal fa-user icons"></i><a href="#">Contacts</a></li>
-        <li><i class="fal fa-phone-alt icons"></i><a href="./airtime.html">Airtime</a></li>
-        <li><i class="fal fa-database icons"></i><a href="./senddata.html">Data</a></li>
-        <li><i class="fas fa-history icons"></i><a href="#">History</a></li>
-        <li><i class="far fa-bell icons"></i><a href="#">Notification</a></li>
-        <li><i class="fal fa-cog icons"></i><a href="#">Settings</a></li>
-        <li class="line"><i class="fal fa-sign-out"></i><a href="#">Logout</a></li>
-      </ul>
+    <img src="./images/logo.png" alt="sudha logo" />
+    <div class="mobile__hamburger" id="hamburger">
+      <div></div>
     </div>
-    <!--end of sidebar-->
-
-    <!--second slide of the page-->
+  </nav>
+  <main>
+    <!-- Side Nav -->
+    <aside id="side-nav">
+      <div class="user-details">
+        <img src="./images/user.jpg" alt="user" class="user-img" />
+        <h2>Hello, Morayo</h2>
+        <p>morayoadelakun@gmail.com</p>
+      </div>
+      <div class="list-items">
+        <a href="./index.html">
+          <i class="far fa-home-lg-alt"></i>
+          Dashboard
+        </a>
+        <a href="./addfunds.html" class="active-nav">
+          <i class="fal fa-wallet"></i>
+          Add Funds
+        </a>
+        <a href="./contact.html">
+          <i class="far fa-user"></i>
+          Contacts
+        </a>
+        <a href="./airtime.html">
+          <i class="fal fa-phone-alt"></i>
+          Airtime
+        </a>
+        <a href="./data.html">
+          <i class="fal fa-database"></i>
+          Data
+        </a>
+        <a href="./history.html">
+          <i class="fas fa-history"></i>
+          History
+        </a>
+        <a href="./notification.html">
+          <i class="far fa-bell"></i>
+          Notification
+        </a>
+        <a href="./settings.html">
+          <i class="fal fa-cog"></i>
+          Settings
+        </a>
+        <hr />
+        <a href="./login.html">
+          <i class="fal fa-sign-out"></i>
+          Logout
+        </a>
+      </div>
+      </ul>
+    </aside>
+    <!-- End of Side Nav -->
     <section class="main-container" id="add-funds">
-      <h1 class="main-header">Add Funds</h1>
+      <h1 class="header-h1">Add Funds</h1>
       <p class="payment-method">Choose your payment Method</p>
       <div class="payment-div">
         <button class="bank"><i class="far fa-home-lg-alt"></i>Bank Transfer</button>
@@ -63,8 +94,9 @@
         <button class="notify-btn">Notify Admin</button>
       </div>
     </section>
-    <!--end second slide of the page-->
-  </section>
+
+  </main>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

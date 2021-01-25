@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="icon" href="./images/logo.png" />
+  <title>Sudha</title>
+</head>
+
+<body>
+  <!-- Logo Nav -->
+  <nav>
+    <img src="./images/logo.png" alt="sudha logo" />
+    <div class="mobile__hamburger" id="hamburger">
+      <div></div>
+    </div>
+  </nav>
+  <main>
+    <!-- Side Nav -->
+    <aside id="side-nav">
+      <div class="user-details">
+        <img src="./images/user.jpg" alt="user" class="user-img" />
+        <h2>Hello, Morayo</h2>
+        <p>morayoadelakun@gmail.com</p>
+      </div>
+      <div class="list-items">
+        <a href="./index.html">
+          <i class="far fa-home-lg-alt"></i>
+          Dashboard
+        </a>
+        <a href="./addfunds.html">
+          <i class="fal fa-wallet"></i>
+          Add Funds
+        </a>
+        <a href="./contact.html">
+          <i class="far fa-user"></i>
+          Contacts
+        </a>
+        <a href="./airtime.html">
+          <i class="fal fa-phone-alt"></i>
+          Airtime
+        </a>
+        <a href="./data.html">
+          <i class="fal fa-database"></i>
+          Data
+        </a>
+        <a href="./history.html" class="active-nav">
+          <i class="fas fa-history"></i>
+          History
+        </a>
+        <a href="./notification.html">
+          <i class="far fa-bell"></i>
+          Notification
+        </a>
+        <a href="./settings.html">
+          <i class="fal fa-cog"></i>
+          Settings
+        </a>
+        <hr />
+        <a href="./login.html">
+          <i class="fal fa-sign-out"></i>
+          Logout
+        </a>
+      </div>
+      </ul>
+    </aside>
+    <!-- End of Side Nav -->
+    <section class="main-container" id="history">
+      <!-- Container of every other code -->
+      <h1 class="header-h1">History</h1>
+      <ul class="tab-btn">
+        <li id="topUpBtn" class="active-contact">Topup</li>
+        <li id="airtimeBtn">Airtime/Data</li>
+      </ul>
+      <div>
+        <!--------------
+           TopUp
+          ---------------->
+        <div id="topup">
+          <table class="history">
+            <tr>
+              <th>Id/Ref</th>
+              <th>Credit Means</th>
+              <th>Amount</th>
+              <th>Type</th>
+              <th>Date Created</th>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Paystack</td>
+              <td>500</td>
+              <td>Credit</td>
+              <td>17-09-2020</td>
+            </tr>
+
+
+
+
+
+          </table>
+        </div>
+
+        <!--------------
+           Airtime/Data
+          ---------------->
+        <div id="airtime">
+          <table class="history">
+            <tr>
+              <th>Id/Ref</th>
+              <th>Status</th>
+              <th>Debit Means</th>
+              <th>Amount</th>
+              <th>Network</th>
+              <th>Phone Number</th>
+              <th>Date Created</th>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Successful</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Successful</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td class="fail">Failed</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Successful</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Successful</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td class="fail">Failed</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+            <tr>
+              <td>5fe05aedeba35a1f05ed7c41</td>
+              <td>Successful</td>
+              <td>Airtime</td>
+              <td>500</td>
+              <td>Airtel</td>
+              <td>09078629364</td>
+              <td>17-09-2020</td>
+            </tr>
+
+
+
+
+
+
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <script src="./js/airtime.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

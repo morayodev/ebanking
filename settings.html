@@ -4,48 +4,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="icon" href="./images/logo.png" />
   <title>Sudha</title>
 </head>
 
 <body>
+  <!-- Logo Nav -->
   <nav>
-    <img src="./images/logo.svg " />
-  </nav>
-  <section class="container">
-    <!--begining of sidebar-->
-    <div class="sidebar">
-      <div class="bar">
-        <img src="images/hero6.jpg" alt="my hero">
-        <h3>Hello, Alsaheem</h3>
-        <p>adehaalewa64@gmail.com</p>
-      </div>
-      <ul>
-        <li><i class="far fa-home-lg-alt icons"></i><a href="./index.html">Dashboard</a></li>
-        <li><i class="fal fa-wallet icons"></i><a href="./addfunds.html">Add funds</a></li>
-        <li><i class="fal fa-user icons"></i><a href="#">Contacts</a></li>
-        <li><i class="fal fa-phone-alt icons"></i><a href="./airtime.html">Airtime</a></li>
-        <li><i class="fal fa-database icons"></i><a href="./senddata.html">Data</a></li>
-        <li><i class="fas fa-history icons"></i><a href="#">History</a></li>
-        <li><i class="far fa-bell icons"></i><a href="#">Notification</a></li>
-        <li class="active-nav"><i class="fal fa-cog icons"></i><a href="./settings.html">Settings</a></li>
-        <li class="line"><i class="fal fa-sign-out"></i><a href="#">Logout</a></li>
-      </ul>
+    <img src="./images/logo.png" alt="sudha logo" />
+    <div class="mobile__hamburger" id="hamburger">
+      <div></div>
     </div>
-    <!--end of sidebar-->
-
-    <!--second slide of the page-->
+  </nav>
+  <main>
+    <!-- Side Nav -->
+    <aside id="side-nav">
+      <div class="user-details">
+        <img src="./images/user.jpg" alt="user" class="user-img" />
+        <h2>Hello, Morayo</h2>
+        <p>morayoadelakun@gmail.com</p>
+      </div>
+      <div class="list-items">
+        <a href="./index.html">
+          <i class="far fa-home-lg-alt"></i>
+          Dashboard
+        </a>
+        <a href="./addfunds.html">
+          <i class="fal fa-wallet"></i>
+          Add Funds
+        </a>
+        <a href="./contact.html">
+          <i class="far fa-user"></i>
+          Contacts
+        </a>
+        <a href="./airtime.html">
+          <i class="fal fa-phone-alt"></i>
+          Airtime
+        </a>
+        <a href="./data.html">
+          <i class="fal fa-database"></i>
+          Data
+        </a>
+        <a href="./history.html">
+          <i class="fas fa-history"></i>
+          History
+        </a>
+        <a href="./notification.html">
+          <i class="far fa-bell"></i>
+          Notification
+        </a>
+        <a href="./settings.html" class="active-nav">
+          <i class="fal fa-cog"></i>
+          Settings
+        </a>
+        <hr />
+        <a href="./login.html">
+          <i class="fal fa-sign-out"></i>
+          Logout
+        </a>
+      </div>
+      </ul>
+    </aside>
+    <!-- End of Side Nav -->
     <section class="main-container" id="settings">
       <div class="header-div">
-        <h1 class="main-header">Account Settings</h1>
+        <h1 class="header-h1">Account Settings</h1>
         <button>Set API Password</button>
       </div>
       <div class="upload-div">
         <div>
-          <img src="./images/hero6.jpg" alt="User" />
+          <img src="./images/user.jpg" alt="user" class="user-img"" />
           <div>
             <h2>Upload a New Photo</h2>
             <p>Profile pic.jpg</p>
@@ -55,18 +86,18 @@
       </div>
       <section>
 
-        <div class="form-holder">
+        <div class=" form-holder">
           <form>
-            <h1 class="main-header">Update Account info</h1>
+            <h1 class="header-h1">Update Account info</h1>
             <section class="flex">
               <div>
                 <label>Name</label>
-                <input type="text">
+                <input type="text"placeholder="Morayo Adewale">
               </div>
 
               <div>
                 <label>Email Address</label>
-                <input type="email" />
+                <input type="email" placeholder="example@email.com" />
               </div>
             </section>
             <div>
@@ -76,10 +107,11 @@
             <button>Update Info</button>
           </form>
         </div>
-      </section>
     </section>
-    <!--end second slide of the page-->
-  </section>
+    </section>
+
+  </main>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

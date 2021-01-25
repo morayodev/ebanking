@@ -1,15 +1,28 @@
+const groupBtn = document.getElementById("groupBtn"),
+  contactBtn = document.getElementById("contactBtn"),
+  contact = document.getElementById("contactDiv"),
+  group = document.getElementById("group"),
+  addBtn = document.getElementById("addBtn");
 
-document.getElementById("group2").addEventListener("click", myFunction);
 
-function myFunction() {
-     document.getElementById("group").style.display = "block";
-    document.getElementById("contact").style.display = "none";
-       document.getElementById("addbtn").style.display = "none";
+
+
+
+groupBtn.addEventListener("click", openGroup);
+function openGroup() {
+  group.style.display = "block";
+  groupBtn.classList.add("active-contact")
+  contactBtn.classList.remove("active-contact")
+  contact.style.display = "none";
+  addBtn.style.display = "none";
 }
-document.getElementById("contact2").addEventListener("click", myFunctio);
 
-function myFunctio() {
-  document.getElementById("group").style.display = "none";
-    document.getElementById("contact").style.display = "block";
-    document.getElementById("addbtn").style.display = "block";
+
+contactBtn.addEventListener("click", openContact);
+function openContact() {
+  group.style.display = "none";
+  contact.style.display = "block";
+  contactBtn.classList.add("active-contact")
+  groupBtn.classList.remove("active-contact")
+  addBtn.style.display = "block";
 }
