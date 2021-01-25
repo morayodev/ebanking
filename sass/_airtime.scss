@@ -1,44 +1,56 @@
-#airtime {
-  color: #404040;
-  section.main-div {
-    background-color: white;
-    padding: 2.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-    .data-plan-div{
-      display: grid;
-      grid-auto-flow: column;
-      grid-gap: 2.5rem;
-      align-items: center;
-    }
-    form {
-      width: 80%;
-      margin-bottom: 2rem;
-      div {
-        margin-bottom: .75rem;
-      }
-      label {
-        display: block;
-        margin-bottom: .75rem;
-      }
-      input,
-      select {
-        width: 100%;
-        padding: .75rem;
-        outline: none;
-        border: 1px solid #4040402b;
-        border-radius: 5px;
-        color: #404040;
-        &:focus {
-          border-color: white;
-          box-shadow: 0 0 8px 0px #4040406e;
+    #airtime {
+      color: #404040;
+      section.main-div {
+        background-color: white;
+        padding: 2.5rem;
+        border-radius: 10px;
+        margin: 1.5rem 0;
+        .data-plan-div {
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 2.5rem;
+          align-items: center;
+        }
+        form {
+          width: 80%;
+          margin-bottom: 2rem;
+          div {
+            margin-bottom: 1.25rem;
+          }
+          label {
+            display: block;
+            margin-bottom: .75rem;
+          }
+          input,
+          select {
+            width: 100%;
+            padding: .75rem;
+            outline: none;
+            border: 1px solid #4040402b;
+            border-radius: 5px;
+            color: #404040;
+            &:focus {
+              border-color: white;
+              box-shadow: 0 0 8px 0px #4040406e;
+            }
+          }
+          button {
+            margin-left: auto;
+            margin-right: 0;
+            display: block;
+          }
         }
       }
-      button {
-        margin-left: auto;
-        margin-right: 0;
-        display: block;
+      @media (max-width: 768px) {
+        section.main-div {
+          padding: 1.5rem;
+          .data-plan-div {
+            grid-auto-flow: row;
+            grid-gap: 0;
+          }
+          form {
+            width: 100%;
+          }
+        }
       }
     }
-  }
-}
